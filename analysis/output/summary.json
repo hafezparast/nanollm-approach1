@@ -1,0 +1,3071 @@
+{
+  "total_files": 1707,
+  "total_lines": 544124,
+  "total_functions": 12988,
+  "total_classes": 3191,
+  "total_imports": 25963,
+  "total_call_sites": 94063,
+  "external_dependencies": [
+    "PIL",
+    "PyPDF2",
+    "_lazy_imports",
+    "_lazy_imports_registry",
+    "_logging",
+    "_redis",
+    "a2a",
+    "adapters",
+    "additional_logging_utils",
+    "agentops",
+    "agents",
+    "ai21",
+    "aim",
+    "aiodynamo",
+    "aiohttp",
+    "akto",
+    "amazon_llama_transformation",
+    "amazon_nova_transformation",
+    "amazon_titan_g1_transformation",
+    "amazon_titan_multimodal_transformation",
+    "amazon_titan_v2_transformation",
+    "anthropic",
+    "anthropic_messages",
+    "anyio",
+    "api",
+    "aporia_ai",
+    "apscheduler",
+    "arize",
+    "arize_phoenix_client",
+    "arize_phoenix_prompt_manager",
+    "assistants",
+    "ast",
+    "asyncify",
+    "atexit",
+    "audio_transcription",
+    "auth",
+    "auth_checks",
+    "auth_checks_organization",
+    "auth_utils",
+    "authenticator",
+    "aws_sdk_bedrock_runtime",
+    "azure",
+    "azure_blob_cache",
+    "azure_blob_storage_backend",
+    "backoff",
+    "base",
+    "base_aws_llm",
+    "base_cache",
+    "base_invoke_transformation",
+    "base_llm",
+    "base_managed_resource",
+    "base_passthrough_logging_handler",
+    "base_routing_strategy",
+    "base_secret_manager",
+    "base_utils",
+    "batch_completion",
+    "batch_embed_content_transformation",
+    "batches",
+    "batching_handler",
+    "bitbucket_client",
+    "bitbucket_prompt_manager",
+    "block_code_execution",
+    "boto3",
+    "botocore",
+    "bria_transformation",
+    "budget_manager",
+    "builtins",
+    "bytedance_transformation",
+    "cProfile",
+    "cache_control_check",
+    "cache_settings_endpoints",
+    "caching",
+    "calendar",
+    "certifi",
+    "chat",
+    "click",
+    "client",
+    "code_validator",
+    "cohere_transformation",
+    "commands",
+    "common_utils",
+    "competitor_intent",
+    "completion",
+    "config",
+    "configparser",
+    "containers",
+    "context_caching",
+    "contextvars",
+    "converse_handler",
+    "converse_transformation",
+    "core_helpers",
+    "cost_calculator",
+    "credentials",
+    "crowdstrike_aidr",
+    "cryptography",
+    "csv",
+    "custom_batch_logger",
+    "custom_code_guardrail",
+    "custom_httpx",
+    "custom_logger",
+    "cz_resource_names",
+    "dall_e_2_transformation",
+    "dall_e_3_transformation",
+    "dalle2_transformation",
+    "database",
+    "databricks",
+    "dateutil",
+    "ddtrace",
+    "decimal",
+    "deepeval",
+    "destinations",
+    "difflib",
+    "disk_cache",
+    "diskcache",
+    "document_intelligence",
+    "dotenv",
+    "dotprompt_manager",
+    "dual_cache",
+    "dynamoai",
+    "email_templates",
+    "embedding",
+    "endpoint_factory",
+    "endpoints",
+    "enkryptai",
+    "enterprise",
+    "evals",
+    "exception_mapping_utils",
+    "exceptions",
+    "export_engine",
+    "factory",
+    "fastapi",
+    "fastapi_sso",
+    "fastuuid",
+    "file_handler",
+    "files",
+    "fine_tuning",
+    "flux2_transformation",
+    "flux_pro_v11_transformation",
+    "flux_pro_v11_ultra_transformation",
+    "flux_schnell_transformation",
+    "flux_transformation",
+    "fnmatch",
+    "gc",
+    "gcs_cache",
+    "gemini",
+    "generic_guardrail_api",
+    "generic_prompt_manager",
+    "get_headers",
+    "gitlab_prompt_manager",
+    "google",
+    "google_genai",
+    "gpt_transformation",
+    "grayswan",
+    "groq",
+    "guardrail_initializers",
+    "guardrail_translation",
+    "guardrails",
+    "guardrails_ai",
+    "gunicorn",
+    "gzip",
+    "handler",
+    "health",
+    "heapq",
+    "hiddenlayer",
+    "hosted_vllm",
+    "html",
+    "http_client",
+    "http_handler",
+    "httpx",
+    "hypercorn",
+    "ibm_detector",
+    "ideogram_v3_transformation",
+    "image_edit",
+    "image_generation",
+    "image_handling",
+    "imagen4_transformation",
+    "images",
+    "importlib_metadata",
+    "in_memory_cache",
+    "initialize_dynamic_callback_params",
+    "integrations",
+    "interface",
+    "invoke_handler",
+    "ipaddress",
+    "itertools",
+    "javelin",
+    "jinja2",
+    "json_loader",
+    "jsonschema",
+    "jwt",
+    "keys",
+    "langfuse",
+    "langfuse_handler",
+    "lasso",
+    "line_profiler",
+    "llama3",
+    "llm_provider_handlers",
+    "llm_response_utils",
+    "llm_sandbox",
+    "llms",
+    "logfire",
+    "lunary",
+    "main",
+    "mangum",
+    "math",
+    "max_budget_limiter",
+    "max_budget_per_session_limiter",
+    "max_iterations_limiter",
+    "mcp",
+    "mcp_end_user_permission",
+    "mcp_jwt_signer",
+    "messages",
+    "messages_transformation",
+    "mlflow",
+    "model_armor",
+    "model_groups",
+    "models",
+    "msvcrt",
+    "nacl",
+    "noma",
+    "noma_v2",
+    "numpydoc",
+    "objgraph",
+    "ocr",
+    "openai",
+    "openai_like",
+    "opensearchpy",
+    "opentelemetry",
+    "opik",
+    "orjson",
+    "packaging",
+    "pangea",
+    "panw_prisma_airs",
+    "parallel_request_limiter",
+    "parallel_request_limiter_v3",
+    "parquet",
+    "pass_through_endpoints",
+    "passthrough",
+    "passthrough_endpoint_router",
+    "patterns",
+    "pdf_parser",
+    "petals",
+    "pillar",
+    "pkg_resources",
+    "platform",
+    "polars",
+    "primitives",
+    "prisma",
+    "prometheus_client",
+    "prompt_caching_cache",
+    "prompt_management_base",
+    "prompt_manager",
+    "prompt_registry",
+    "prompt_security",
+    "prompt_shield",
+    "proto",
+    "proxy",
+    "proxy_server",
+    "proxy_setting_endpoints",
+    "psutil",
+    "public_endpoints",
+    "pydantic",
+    "pydantic_core",
+    "pypdf",
+    "pyroscope",
+    "pytest",
+    "qdrant_semantic_cache",
+    "qualifire",
+    "rag",
+    "rag_api",
+    "random",
+    "rate_limiter_utils",
+    "realtime_api",
+    "recraft_v3_transformation",
+    "redis",
+    "redis_cache",
+    "redis_cluster_cache",
+    "redis_semantic_cache",
+    "redisvl",
+    "requests",
+    "requests_aws4auth",
+    "rerank",
+    "rerank_api",
+    "resource",
+    "response_rejection_code",
+    "responses",
+    "responses_adapters",
+    "responses_id_security",
+    "rich",
+    "router",
+    "router_callbacks",
+    "router_settings_endpoints",
+    "router_utils",
+    "rules",
+    "s3_cache",
+    "s3_destination",
+    "scheduler",
+    "schema",
+    "search",
+    "search_api",
+    "search_tool_registry",
+    "semantic_router",
+    "sentry_sdk",
+    "serializers",
+    "signal",
+    "skills",
+    "slack_alerting",
+    "slack_bolt",
+    "smithy_aws_core",
+    "smtplib",
+    "soundfile",
+    "specialty_caches",
+    "sse_starlette",
+    "stable_diffusion_transformation",
+    "starlette",
+    "storage_backend",
+    "storage_backend_service",
+    "streaming",
+    "streaming_handler",
+    "streaming_iterator",
+    "streaming_utils",
+    "subprocess",
+    "success_handler",
+    "supabase",
+    "sysconfig",
+    "teams",
+    "tenacity",
+    "termios",
+    "text_moderation",
+    "text_to_speech",
+    "tiktoken",
+    "tokenizers",
+    "tools",
+    "traceloop",
+    "tracemalloc",
+    "transformation",
+    "transformations",
+    "transformer",
+    "transformers",
+    "tty",
+    "twelvelabs_marengo_transformation",
+    "types",
+    "types_utils",
+    "ui_discovery_endpoints",
+    "ulid",
+    "unicodedata",
+    "unittest",
+    "users",
+    "utils",
+    "uvicorn",
+    "v1_transformation",
+    "vantage_destination",
+    "vector_store_files",
+    "vector_store_registry",
+    "vector_stores",
+    "vertex_ai",
+    "vertex_and_google_ai_studio_gemini",
+    "vertex_gemini_transformation",
+    "vertex_imagen_transformation",
+    "vertex_llm_base",
+    "vertexai",
+    "videos",
+    "vllm",
+    "wandb",
+    "weakref",
+    "webbrowser",
+    "websockets",
+    "whisper_transformation",
+    "xai",
+    "xml",
+    "yaml",
+    "yarl",
+    "zipfile",
+    "zoneinfo",
+    "zscaler_ai_guard"
+  ],
+  "external_dep_count": 375,
+  "internal_import_targets": 1064,
+  "public_api_functions": [],
+  "public_api_count": 0,
+  "top_50_called_functions": [
+    {
+      "name": "isinstance",
+      "count": 5319
+    },
+    {
+      "name": "str",
+      "count": 2605
+    },
+    {
+      "name": "getattr",
+      "count": 2046
+    },
+    {
+      "name": "len",
+      "count": 1820
+    },
+    {
+      "name": "ValueError",
+      "count": 1390
+    },
+    {
+      "name": "HTTPException",
+      "count": 1351
+    },
+    {
+      "name": "kwargs.get",
+      "count": 1289
+    },
+    {
+      "name": "verbose_logger.debug",
+      "count": 1276
+    },
+    {
+      "name": "verbose_proxy_logger.debug",
+      "count": 1185
+    },
+    {
+      "name": "Field",
+      "count": 1045
+    },
+    {
+      "name": "Depends",
+      "count": 1021
+    },
+    {
+      "name": "hasattr",
+      "count": 927
+    },
+    {
+      "name": "os.getenv",
+      "count": 879
+    },
+    {
+      "name": "get",
+      "count": 878
+    },
+    {
+      "name": "cast",
+      "count": 799
+    },
+    {
+      "name": "get_secret_str",
+      "count": 689
+    },
+    {
+      "name": "format",
+      "count": 655
+    },
+    {
+      "name": "int",
+      "count": 584
+    },
+    {
+      "name": "dict",
+      "count": 578
+    },
+    {
+      "name": "Exception",
+      "count": 554
+    },
+    {
+      "name": "super",
+      "count": 543
+    },
+    {
+      "name": "litellm_params.get",
+      "count": 539
+    },
+    {
+      "name": "json.dumps",
+      "count": 506
+    },
+    {
+      "name": "data.get",
+      "count": 465
+    },
+    {
+      "name": "set",
+      "count": 410
+    },
+    {
+      "name": "join",
+      "count": 343
+    },
+    {
+      "name": "verbose_proxy_logger.error",
+      "count": 332
+    },
+    {
+      "name": "__init__",
+      "count": 328
+    },
+    {
+      "name": "time.time",
+      "count": 324
+    },
+    {
+      "name": "setattr",
+      "count": 319
+    },
+    {
+      "name": "optional_params.get",
+      "count": 318
+    },
+    {
+      "name": "verbose_proxy_logger.warning",
+      "count": 318
+    },
+    {
+      "name": "list",
+      "count": 310
+    },
+    {
+      "name": "verbose_proxy_logger.exception",
+      "count": 306
+    },
+    {
+      "name": "router.get",
+      "count": 298
+    },
+    {
+      "name": "datetime.now",
+      "count": 296
+    },
+    {
+      "name": "verbose_proxy_logger.info",
+      "count": 293
+    },
+    {
+      "name": "json.loads",
+      "count": 290
+    },
+    {
+      "name": "router.post",
+      "count": 283
+    },
+    {
+      "name": "print_verbose",
+      "count": 280
+    },
+    {
+      "name": "response.json",
+      "count": 274
+    },
+    {
+      "name": "float",
+      "count": 268
+    },
+    {
+      "name": "asyncio.create_task",
+      "count": 256
+    },
+    {
+      "name": "enumerate",
+      "count": 251
+    },
+    {
+      "name": "ProxyException",
+      "count": 245
+    },
+    {
+      "name": "get_async_httpx_client",
+      "count": 242
+    },
+    {
+      "name": "verbose_logger.exception",
+      "count": 241
+    },
+    {
+      "name": "print",
+      "count": 238
+    },
+    {
+      "name": "type",
+      "count": 237
+    },
+    {
+      "name": "uuid.uuid4",
+      "count": 236
+    }
+  ],
+  "submodules": {
+    "(root)": {
+      "lines": 39728,
+      "functions": 765,
+      "classes": 57,
+      "files": 41
+    },
+    "management_endpoints": {
+      "lines": 34919,
+      "functions": 589,
+      "classes": 57,
+      "files": 41
+    },
+    "guardrails": {
+      "lines": 32875,
+      "functions": 776,
+      "classes": 141,
+      "files": 94
+    },
+    "main": {
+      "lines": 20371,
+      "functions": 253,
+      "classes": 2,
+      "files": 23
+    },
+    "vertex_ai": {
+      "lines": 20155,
+      "functions": 548,
+      "classes": 72,
+      "files": 69
+    },
+    "bedrock": {
+      "lines": 20111,
+      "functions": 573,
+      "classes": 67,
+      "files": 57
+    },
+    "custom_httpx": {
+      "lines": 15167,
+      "functions": 239,
+      "classes": 11,
+      "files": 8
+    },
+    "proxy_server": {
+      "lines": 13610,
+      "functions": 211,
+      "classes": 4,
+      "files": 1
+    },
+    "openai": {
+      "lines": 12591,
+      "functions": 413,
+      "classes": 46,
+      "files": 52
+    },
+    "_experimental": {
+      "lines": 12046,
+      "functions": 290,
+      "classes": 12,
+      "files": 20
+    },
+    "anthropic": {
+      "lines": 11540,
+      "functions": 282,
+      "classes": 28,
+      "files": 36
+    },
+    "utils": {
+      "lines": 10966,
+      "functions": 319,
+      "classes": 118,
+      "files": 14
+    },
+    "auth": {
+      "lines": 10560,
+      "functions": 240,
+      "classes": 9,
+      "files": 14
+    },
+    "pass_through_endpoints": {
+      "lines": 10270,
+      "functions": 208,
+      "classes": 25,
+      "files": 17
+    },
+    "hooks": {
+      "lines": 8697,
+      "functions": 176,
+      "classes": 27,
+      "files": 23
+    },
+    "base_llm": {
+      "lines": 7689,
+      "functions": 429,
+      "classes": 48,
+      "files": 42
+    },
+    "llms": {
+      "lines": 7389,
+      "functions": 35,
+      "classes": 652,
+      "files": 32
+    },
+    "prompt_templates": {
+      "lines": 7239,
+      "functions": 166,
+      "classes": 5,
+      "files": 4
+    },
+    "azure": {
+      "lines": 6879,
+      "functions": 187,
+      "classes": 29,
+      "files": 29
+    },
+    "litellm_logging": {
+      "lines": 5757,
+      "functions": 104,
+      "classes": 3,
+      "files": 1
+    },
+    "spend_tracking": {
+      "lines": 5605,
+      "functions": 87,
+      "classes": 1,
+      "files": 5
+    },
+    "db": {
+      "lines": 5520,
+      "functions": 143,
+      "classes": 14,
+      "files": 17
+    },
+    "common_utils": {
+      "lines": 5488,
+      "functions": 136,
+      "classes": 8,
+      "files": 24
+    },
+    "azure_ai": {
+      "lines": 5141,
+      "functions": 146,
+      "classes": 25,
+      "files": 38
+    },
+    "client": {
+      "lines": 5053,
+      "functions": 163,
+      "classes": 16,
+      "files": 26
+    },
+    "_types": {
+      "lines": 4934,
+      "functions": 50,
+      "classes": 230,
+      "files": 2
+    },
+    "proxy": {
+      "lines": 4658,
+      "functions": 60,
+      "classes": 278,
+      "files": 59
+    },
+    "policy_engine": {
+      "lines": 4335,
+      "functions": 105,
+      "classes": 7,
+      "files": 12
+    },
+    "gemini": {
+      "lines": 4239,
+      "functions": 152,
+      "classes": 13,
+      "files": 19
+    },
+    "litellm_completion_transformation": {
+      "lines": 3835,
+      "functions": 89,
+      "classes": 5,
+      "files": 4
+    },
+    "prometheus": {
+      "lines": 3215,
+      "functions": 81,
+      "classes": 1,
+      "files": 1
+    },
+    "mcp": {
+      "lines": 2862,
+      "functions": 57,
+      "classes": 17,
+      "files": 4
+    },
+    "ingestion": {
+      "lines": 2785,
+      "functions": 54,
+      "classes": 6,
+      "files": 9
+    },
+    "exception_mapping_utils": {
+      "lines": 2728,
+      "functions": 14,
+      "classes": 2,
+      "files": 2
+    },
+    "agent_endpoints": {
+      "lines": 2535,
+      "functions": 53,
+      "classes": 2,
+      "files": 8
+    },
+    "openai_files_endpoints": {
+      "lines": 2521,
+      "functions": 42,
+      "classes": 2,
+      "files": 3
+    },
+    "SlackAlerting": {
+      "lines": 2471,
+      "functions": 71,
+      "classes": 11,
+      "files": 5
+    },
+    "opentelemetry": {
+      "lines": 2443,
+      "functions": 58,
+      "classes": 2,
+      "files": 1
+    },
+    "streaming_handler": {
+      "lines": 2407,
+      "functions": 58,
+      "classes": 1,
+      "files": 1
+    },
+    "litellm_responses_transformation": {
+      "lines": 2383,
+      "functions": 45,
+      "classes": 7,
+      "files": 7
+    },
+    "langfuse": {
+      "lines": 2340,
+      "functions": 62,
+      "classes": 5,
+      "files": 6
+    },
+    "datadog": {
+      "lines": 2250,
+      "functions": 63,
+      "classes": 4,
+      "files": 6
+    },
+    "cohere": {
+      "lines": 2127,
+      "functions": 87,
+      "classes": 13,
+      "files": 11
+    },
+    "fal_ai": {
+      "lines": 2028,
+      "functions": 45,
+      "classes": 13,
+      "files": 13
+    },
+    "litellm_pre_call_utils": {
+      "lines": 1980,
+      "functions": 46,
+      "classes": 2,
+      "files": 1
+    },
+    "streaming_iterator": {
+      "lines": 1956,
+      "functions": 78,
+      "classes": 13,
+      "files": 4
+    },
+    "common_request_processing": {
+      "lines": 1946,
+      "functions": 30,
+      "classes": 1,
+      "files": 1
+    },
+    "sagemaker": {
+      "lines": 1828,
+      "functions": 48,
+      "classes": 8,
+      "files": 8
+    },
+    "litellm_proxy": {
+      "lines": 1819,
+      "functions": 49,
+      "classes": 10,
+      "files": 11
+    },
+    "runwayml": {
+      "lines": 1818,
+      "functions": 56,
+      "classes": 3,
+      "files": 8
+    },
+    "integrations": {
+      "lines": 1812,
+      "functions": 13,
+      "classes": 90,
+      "files": 24
+    },
+    "llm_cost_calc": {
+      "lines": 1804,
+      "functions": 46,
+      "classes": 5,
+      "files": 3
+    },
+    "arize": {
+      "lines": 1730,
+      "functions": 61,
+      "classes": 7,
+      "files": 6
+    },
+    "watsonx": {
+      "lines": 1706,
+      "functions": 57,
+      "classes": 9,
+      "files": 14
+    },
+    "redis_cache": {
+      "lines": 1701,
+      "functions": 56,
+      "classes": 2,
+      "files": 1
+    },
+    "vector_store_endpoints": {
+      "lines": 1665,
+      "functions": 23,
+      "classes": 0,
+      "files": 3
+    },
+    "black_forest_labs": {
+      "lines": 1657,
+      "functions": 30,
+      "classes": 5,
+      "files": 8
+    },
+    "websearch_interception": {
+      "lines": 1644,
+      "functions": 27,
+      "classes": 2,
+      "files": 4
+    },
+    "health_endpoints": {
+      "lines": 1612,
+      "functions": 29,
+      "classes": 0,
+      "files": 2
+    },
+    "huggingface": {
+      "lines": 1597,
+      "functions": 43,
+      "classes": 7,
+      "files": 6
+    },
+    "databricks": {
+      "lines": 1590,
+      "functions": 49,
+      "classes": 8,
+      "files": 8
+    },
+    "oci": {
+      "lines": 1528,
+      "functions": 38,
+      "classes": 5,
+      "files": 2
+    },
+    "prompts": {
+      "lines": 1519,
+      "functions": 24,
+      "classes": 10,
+      "files": 5
+    },
+    "ollama": {
+      "lines": 1466,
+      "functions": 41,
+      "classes": 6,
+      "files": 4
+    },
+    "interactions": {
+      "lines": 1388,
+      "functions": 0,
+      "classes": 95,
+      "files": 2
+    },
+    "openrouter": {
+      "lines": 1388,
+      "functions": 45,
+      "classes": 8,
+      "files": 8
+    },
+    "gigachat": {
+      "lines": 1365,
+      "functions": 45,
+      "classes": 6,
+      "files": 8
+    },
+    "anthropic_endpoints": {
+      "lines": 1295,
+      "functions": 16,
+      "classes": 0,
+      "files": 4
+    },
+    "focus": {
+      "lines": 1274,
+      "functions": 44,
+      "classes": 12,
+      "files": 15
+    },
+    "management_helpers": {
+      "lines": 1271,
+      "functions": 33,
+      "classes": 1,
+      "files": 5
+    },
+    "ui_crud_endpoints": {
+      "lines": 1266,
+      "functions": 21,
+      "classes": 11,
+      "files": 2
+    },
+    "llm_response_utils": {
+      "lines": 1258,
+      "functions": 24,
+      "classes": 2,
+      "files": 5
+    },
+    "sap": {
+      "lines": 1257,
+      "functions": 55,
+      "classes": 30,
+      "files": 6
+    },
+    "mistral": {
+      "lines": 1247,
+      "functions": 42,
+      "classes": 6,
+      "files": 8
+    },
+    "pre_call_checks": {
+      "lines": 1221,
+      "functions": 34,
+      "classes": 7,
+      "files": 5
+    },
+    "cloudzero": {
+      "lines": 1190,
+      "functions": 28,
+      "classes": 6,
+      "files": 5
+    },
+    "openai_like": {
+      "lines": 1172,
+      "functions": 40,
+      "classes": 10,
+      "files": 8
+    },
+    "gitlab": {
+      "lines": 1166,
+      "functions": 52,
+      "classes": 5,
+      "files": 3
+    },
+    "search_endpoints": {
+      "lines": 1162,
+      "functions": 18,
+      "classes": 4,
+      "files": 4
+    },
+    "github_copilot": {
+      "lines": 1132,
+      "functions": 39,
+      "classes": 10,
+      "files": 5
+    },
+    "a2a": {
+      "lines": 1086,
+      "functions": 23,
+      "classes": 4,
+      "files": 7
+    },
+    "openai_evals_endpoints": {
+      "lines": 1077,
+      "functions": 11,
+      "classes": 0,
+      "files": 2
+    },
+    "custom_logger": {
+      "lines": 1071,
+      "functions": 59,
+      "classes": 1,
+      "files": 1
+    },
+    "caching_handler": {
+      "lines": 1065,
+      "functions": 20,
+      "classes": 2,
+      "files": 1
+    },
+    "chatgpt": {
+      "lines": 1062,
+      "functions": 51,
+      "classes": 8,
+      "files": 5
+    },
+    "response_api_endpoints": {
+      "lines": 1054,
+      "functions": 10,
+      "classes": 0,
+      "files": 1
+    },
+    "caching": {
+      "lines": 1048,
+      "functions": 30,
+      "classes": 10,
+      "files": 2
+    },
+    "complexity_router": {
+      "lines": 1036,
+      "functions": 13,
+      "classes": 5,
+      "files": 5
+    },
+    "gcs_bucket": {
+      "lines": 1023,
+      "functions": 38,
+      "classes": 2,
+      "files": 3
+    },
+    "fireworks_ai": {
+      "lines": 1002,
+      "functions": 32,
+      "classes": 7,
+      "files": 8
+    },
+    "video_endpoints": {
+      "lines": 997,
+      "functions": 12,
+      "classes": 0,
+      "files": 3
+    },
+    "volcengine": {
+      "lines": 989,
+      "functions": 39,
+      "classes": 4,
+      "files": 6
+    },
+    "adapters": {
+      "lines": 988,
+      "functions": 21,
+      "classes": 3,
+      "files": 3
+    },
+    "proxy_cli": {
+      "lines": 984,
+      "functions": 16,
+      "classes": 3,
+      "files": 1
+    },
+    "batches_endpoints": {
+      "lines": 978,
+      "functions": 4,
+      "classes": 0,
+      "files": 1
+    },
+    "get_llm_provider_logic": {
+      "lines": 959,
+      "functions": 6,
+      "classes": 0,
+      "files": 1
+    },
+    "custom_guardrail": {
+      "lines": 956,
+      "functions": 32,
+      "classes": 2,
+      "files": 1
+    },
+    "opik": {
+      "lines": 927,
+      "functions": 24,
+      "classes": 3,
+      "files": 7
+    },
+    "budget_limiter": {
+      "lines": 899,
+      "functions": 36,
+      "classes": 2,
+      "files": 1
+    },
+    "bitbucket": {
+      "lines": 894,
+      "functions": 33,
+      "classes": 4,
+      "files": 3
+    },
+    "vector_store_files_endpoints": {
+      "lines": 882,
+      "functions": 11,
+      "classes": 0,
+      "files": 2
+    },
+    "perplexity": {
+      "lines": 864,
+      "functions": 31,
+      "classes": 7,
+      "files": 7
+    },
+    "container_endpoints": {
+      "lines": 842,
+      "functions": 17,
+      "classes": 0,
+      "files": 3
+    },
+    "dotprompt": {
+      "lines": 840,
+      "functions": 39,
+      "classes": 3,
+      "files": 3
+    },
+    "token_counter": {
+      "lines": 812,
+      "functions": 22,
+      "classes": 1,
+      "files": 1
+    },
+    "manus": {
+      "lines": 795,
+      "functions": 28,
+      "classes": 2,
+      "files": 5
+    },
+    "router": {
+      "lines": 790,
+      "functions": 27,
+      "classes": 37,
+      "files": 1
+    },
+    "email_templates": {
+      "lines": 760,
+      "functions": 0,
+      "classes": 0,
+      "files": 5
+    },
+    "langgraph": {
+      "lines": 754,
+      "functions": 29,
+      "classes": 3,
+      "files": 4
+    },
+    "xai": {
+      "lines": 745,
+      "functions": 30,
+      "classes": 5,
+      "files": 6
+    },
+    "streaming_chunk_builder_utils": {
+      "lines": 742,
+      "functions": 19,
+      "classes": 1,
+      "files": 1
+    },
+    "hosted_vllm": {
+      "lines": 723,
+      "functions": 33,
+      "classes": 8,
+      "files": 5
+    },
+    "s3_v2": {
+      "lines": 718,
+      "functions": 12,
+      "classes": 1,
+      "files": 1
+    },
+    "response_polling": {
+      "lines": 716,
+      "functions": 12,
+      "classes": 1,
+      "files": 3
+    },
+    "providers": {
+      "lines": 715,
+      "functions": 15,
+      "classes": 5,
+      "files": 6
+    },
+    "providersdantic_ai_agents": {
+      "lines": 702,
+      "functions": 13,
+      "classes": 3,
+      "files": 4
+    },
+    "http_handler": {
+      "lines": 698,
+      "functions": 11,
+      "classes": 1,
+      "files": 1
+    },
+    "predibase": {
+      "lines": 680,
+      "functions": 17,
+      "classes": 3,
+      "files": 3
+    },
+    "hashicorp_secret_manager": {
+      "lines": 678,
+      "functions": 17,
+      "classes": 1,
+      "files": 1
+    },
+    "stability": {
+      "lines": 671,
+      "functions": 18,
+      "classes": 2,
+      "files": 5
+    },
+    "lowest_tpm_rpm_v2": {
+      "lines": 669,
+      "functions": 9,
+      "classes": 2,
+      "files": 1
+    },
+    "fine_tuning_endpoints": {
+      "lines": 665,
+      "functions": 6,
+      "classes": 0,
+      "files": 1
+    },
+    "replicate": {
+      "lines": 658,
+      "functions": 16,
+      "classes": 2,
+      "files": 3
+    },
+    "nvidia_nim": {
+      "lines": 643,
+      "functions": 19,
+      "classes": 9,
+      "files": 5
+    },
+    "realtime_streaming": {
+      "lines": 630,
+      "functions": 17,
+      "classes": 1,
+      "files": 1
+    },
+    "lowest_latency": {
+      "lines": 628,
+      "functions": 7,
+      "classes": 2,
+      "files": 1
+    },
+    "minimax": {
+      "lines": 620,
+      "functions": 19,
+      "classes": 4,
+      "files": 6
+    },
+    "litellm_completion_bridge": {
+      "lines": 609,
+      "functions": 12,
+      "classes": 3,
+      "files": 3
+    },
+    "file_search": {
+      "lines": 594,
+      "functions": 15,
+      "classes": 0,
+      "files": 2
+    },
+    "batch_utils": {
+      "lines": 594,
+      "functions": 19,
+      "classes": 1,
+      "files": 2
+    },
+    "cometapi": {
+      "lines": 590,
+      "functions": 23,
+      "classes": 5,
+      "files": 7
+    },
+    "rag_endpoints": {
+      "lines": 588,
+      "functions": 5,
+      "classes": 0,
+      "files": 2
+    },
+    "langsmith": {
+      "lines": 586,
+      "functions": 22,
+      "classes": 1,
+      "files": 1
+    },
+    "generic_prompt_management": {
+      "lines": 581,
+      "functions": 17,
+      "classes": 1,
+      "files": 2
+    },
+    "vector_store_registry": {
+      "lines": 571,
+      "functions": 25,
+      "classes": 2,
+      "files": 1
+    },
+    "route_llm_request": {
+      "lines": 567,
+      "functions": 7,
+      "classes": 1,
+      "files": 1
+    },
+    "codestral": {
+      "lines": 554,
+      "functions": 15,
+      "classes": 3,
+      "files": 2
+    },
+    "aws_secret_manager_v2": {
+      "lines": 540,
+      "functions": 13,
+      "classes": 1,
+      "files": 1
+    },
+    "elevenlabs": {
+      "lines": 538,
+      "functions": 18,
+      "classes": 3,
+      "files": 3
+    },
+    "ragflow": {
+      "lines": 534,
+      "functions": 13,
+      "classes": 2,
+      "files": 5
+    },
+    "logging_worker": {
+      "lines": 528,
+      "functions": 22,
+      "classes": 2,
+      "files": 1
+    },
+    "posthog": {
+      "lines": 518,
+      "functions": 18,
+      "classes": 1,
+      "files": 1
+    },
+    "dual_cache": {
+      "lines": 516,
+      "functions": 22,
+      "classes": 2,
+      "files": 1
+    },
+    "google_endpoints": {
+      "lines": 515,
+      "functions": 7,
+      "classes": 0,
+      "files": 1
+    },
+    "logging_callback_manager": {
+      "lines": 514,
+      "functions": 25,
+      "classes": 1,
+      "files": 1
+    },
+    "groq": {
+      "lines": 513,
+      "functions": 22,
+      "classes": 4,
+      "files": 3
+    },
+    "snowflake": {
+      "lines": 513,
+      "functions": 17,
+      "classes": 5,
+      "files": 4
+    },
+    "deprecated_providers": {
+      "lines": 510,
+      "functions": 11,
+      "classes": 4,
+      "files": 2
+    },
+    "bytez": {
+      "lines": 505,
+      "functions": 15,
+      "classes": 3,
+      "files": 2
+    },
+    "triton": {
+      "lines": 493,
+      "functions": 23,
+      "classes": 6,
+      "files": 4
+    },
+    "voyage": {
+      "lines": 485,
+      "functions": 27,
+      "classes": 5,
+      "files": 4
+    },
+    "cooldown_handlers": {
+      "lines": 460,
+      "functions": 10,
+      "classes": 0,
+      "files": 1
+    },
+    "deepinfra": {
+      "lines": 459,
+      "functions": 18,
+      "classes": 2,
+      "files": 2
+    },
+    "redis_semantic_cache": {
+      "lines": 451,
+      "functions": 11,
+      "classes": 1,
+      "files": 1
+    },
+    "ovhcloud": {
+      "lines": 447,
+      "functions": 22,
+      "classes": 5,
+      "files": 4
+    },
+    "qdrant_semantic_cache": {
+      "lines": 447,
+      "functions": 8,
+      "classes": 1,
+      "files": 1
+    },
+    "example_config_yaml": {
+      "lines": 441,
+      "functions": 28,
+      "classes": 9,
+      "files": 7
+    },
+    "core_helpers": {
+      "lines": 438,
+      "functions": 15,
+      "classes": 0,
+      "files": 1
+    },
+    "generic_api": {
+      "lines": 429,
+      "functions": 11,
+      "classes": 1,
+      "files": 1
+    },
+    "public_endpoints": {
+      "lines": 426,
+      "functions": 13,
+      "classes": 0,
+      "files": 2
+    },
+    "braintrust_logging": {
+      "lines": 423,
+      "functions": 10,
+      "classes": 1,
+      "files": 1
+    },
+    "azure_storage": {
+      "lines": 401,
+      "functions": 14,
+      "classes": 1,
+      "files": 1
+    },
+    "health_check": {
+      "lines": 398,
+      "functions": 12,
+      "classes": 0,
+      "files": 1
+    },
+    "aws_polly": {
+      "lines": 395,
+      "functions": 12,
+      "classes": 1,
+      "files": 3
+    },
+    "argilla": {
+      "lines": 392,
+      "functions": 12,
+      "classes": 1,
+      "files": 1
+    },
+    "duration_parser": {
+      "lines": 392,
+      "functions": 11,
+      "classes": 0,
+      "files": 1
+    },
+    "sqs": {
+      "lines": 390,
+      "functions": 7,
+      "classes": 1,
+      "files": 1
+    },
+    "exceptions": {
+      "lines": 386,
+      "functions": 12,
+      "classes": 7,
+      "files": 4
+    },
+    "logging_utils": {
+      "lines": 385,
+      "functions": 14,
+      "classes": 0,
+      "files": 1
+    },
+    "deepeval": {
+      "lines": 384,
+      "functions": 17,
+      "classes": 9,
+      "files": 5
+    },
+    "recraft": {
+      "lines": 384,
+      "functions": 15,
+      "classes": 2,
+      "files": 4
+    },
+    "together_ai": {
+      "lines": 381,
+      "functions": 9,
+      "classes": 4,
+      "files": 7
+    },
+    "vector_store_integrations": {
+      "lines": 378,
+      "functions": 6,
+      "classes": 2,
+      "files": 2
+    },
+    "nlp_cloud": {
+      "lines": 377,
+      "functions": 12,
+      "classes": 2,
+      "files": 3
+    },
+    "realtime_endpoints": {
+      "lines": 370,
+      "functions": 4,
+      "classes": 0,
+      "files": 2
+    },
+    "health_check_utils": {
+      "lines": 365,
+      "functions": 14,
+      "classes": 1,
+      "files": 3
+    },
+    "jina_ai": {
+      "lines": 361,
+      "functions": 18,
+      "classes": 3,
+      "files": 4
+    },
+    "videos": {
+      "lines": 359,
+      "functions": 19,
+      "classes": 9,
+      "files": 2
+    },
+    "weave": {
+      "lines": 354,
+      "functions": 10,
+      "classes": 2,
+      "files": 2
+    },
+    "cyberark_secret_manager": {
+      "lines": 351,
+      "functions": 9,
+      "classes": 1,
+      "files": 1
+    },
+    "credential_endpoints": {
+      "lines": 346,
+      "functions": 8,
+      "classes": 1,
+      "files": 1
+    },
+    "vllm": {
+      "lines": 336,
+      "functions": 14,
+      "classes": 5,
+      "files": 4
+    },
+    "image_endpoints": {
+      "lines": 333,
+      "functions": 4,
+      "classes": 0,
+      "files": 2
+    },
+    "lowest_cost": {
+      "lines": 331,
+      "functions": 4,
+      "classes": 1,
+      "files": 1
+    },
+    "redact_messages": {
+      "lines": 330,
+      "functions": 9,
+      "classes": 0,
+      "files": 1
+    },
+    "files": {
+      "lines": 324,
+      "functions": 10,
+      "classes": 3,
+      "files": 1
+    },
+    "get_supported_openai_params": {
+      "lines": 321,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "literal_ai": {
+      "lines": 318,
+      "functions": 13,
+      "classes": 1,
+      "files": 1
+    },
+    "brave": {
+      "lines": 316,
+      "functions": 9,
+      "classes": 3,
+      "files": 2
+    },
+    "azure_sentinel": {
+      "lines": 309,
+      "functions": 5,
+      "classes": 1,
+      "files": 2
+    },
+    "aiml": {
+      "lines": 308,
+      "functions": 10,
+      "classes": 2,
+      "files": 5
+    },
+    "mlflow": {
+      "lines": 307,
+      "functions": 16,
+      "classes": 1,
+      "files": 1
+    },
+    "infinity": {
+      "lines": 301,
+      "functions": 12,
+      "classes": 3,
+      "files": 5
+    },
+    "get_model_cost_map": {
+      "lines": 300,
+      "functions": 9,
+      "classes": 2,
+      "files": 1
+    },
+    "petals": {
+      "lines": 300,
+      "functions": 11,
+      "classes": 2,
+      "files": 3
+    },
+    "vercel_ai_gateway": {
+      "lines": 298,
+      "functions": 14,
+      "classes": 3,
+      "files": 4
+    },
+    "rag": {
+      "lines": 296,
+      "functions": 0,
+      "classes": 14,
+      "files": 1
+    },
+    "agents": {
+      "lines": 293,
+      "functions": 2,
+      "classes": 23,
+      "files": 1
+    },
+    "mock_client_factory": {
+      "lines": 290,
+      "functions": 15,
+      "classes": 2,
+      "files": 1
+    },
+    "dashscope": {
+      "lines": 289,
+      "functions": 10,
+      "classes": 2,
+      "files": 2
+    },
+    "in_memory_cache": {
+      "lines": 289,
+      "functions": 23,
+      "classes": 1,
+      "files": 1
+    },
+    "prometheus_services": {
+      "lines": 287,
+      "functions": 14,
+      "classes": 1,
+      "files": 1
+    },
+    "milvus": {
+      "lines": 286,
+      "functions": 10,
+      "classes": 1,
+      "files": 2
+    },
+    "sambanova": {
+      "lines": 285,
+      "functions": 17,
+      "classes": 3,
+      "files": 4
+    },
+    "oobabooga": {
+      "lines": 279,
+      "functions": 6,
+      "classes": 2,
+      "files": 3
+    },
+    "s3_vectors": {
+      "lines": 279,
+      "functions": 13,
+      "classes": 1,
+      "files": 3
+    },
+    "ocr_endpoints": {
+      "lines": 278,
+      "functions": 4,
+      "classes": 0,
+      "files": 2
+    },
+    "auto_router": {
+      "lines": 277,
+      "functions": 13,
+      "classes": 3,
+      "files": 2
+    },
+    "audio_utils": {
+      "lines": 276,
+      "functions": 5,
+      "classes": 1,
+      "files": 1
+    },
+    "vector_stores": {
+      "lines": 275,
+      "functions": 1,
+      "classes": 28,
+      "files": 1
+    },
+    "tag_based_routing": {
+      "lines": 270,
+      "functions": 5,
+      "classes": 0,
+      "files": 1
+    },
+    "deepgram": {
+      "lines": 266,
+      "functions": 10,
+      "classes": 2,
+      "files": 2
+    },
+    "pattern_match_deployments": {
+      "lines": 265,
+      "functions": 10,
+      "classes": 2,
+      "files": 1
+    },
+    "duckduckgo": {
+      "lines": 265,
+      "functions": 6,
+      "classes": 3,
+      "files": 2
+    },
+    "speech": {
+      "lines": 264,
+      "functions": 7,
+      "classes": 3,
+      "files": 2
+    },
+    "google_pse": {
+      "lines": 262,
+      "functions": 6,
+      "classes": 3,
+      "files": 2
+    },
+    "base_routing_strategy": {
+      "lines": 262,
+      "functions": 13,
+      "classes": 1,
+      "files": 1
+    },
+    "anthropic_cache_control_hook": {
+      "lines": 261,
+      "functions": 10,
+      "classes": 1,
+      "files": 1
+    },
+    "prompt_caching_cache": {
+      "lines": 260,
+      "functions": 8,
+      "classes": 2,
+      "files": 1
+    },
+    "caching_routes": {
+      "lines": 258,
+      "functions": 6,
+      "classes": 0,
+      "files": 1
+    },
+    "fallback_event_handlers": {
+      "lines": 258,
+      "functions": 7,
+      "classes": 0,
+      "files": 1
+    },
+    "dot_notation_indexing": {
+      "lines": 256,
+      "functions": 5,
+      "classes": 0,
+      "files": 1
+    },
+    "custom_secret_manager": {
+      "lines": 253,
+      "functions": 8,
+      "classes": 1,
+      "files": 1
+    },
+    "least_busy": {
+      "lines": 251,
+      "functions": 9,
+      "classes": 1,
+      "files": 1
+    },
+    "lowest_tpm_rpm": {
+      "lines": 250,
+      "functions": 4,
+      "classes": 2,
+      "files": 1
+    },
+    "prompt_management_base": {
+      "lines": 249,
+      "functions": 11,
+      "classes": 2,
+      "files": 1
+    },
+    "moonshot": {
+      "lines": 247,
+      "functions": 10,
+      "classes": 1,
+      "files": 1
+    },
+    "custom_llm": {
+      "lines": 246,
+      "functions": 13,
+      "classes": 2,
+      "files": 1
+    },
+    "searchapi": {
+      "lines": 244,
+      "functions": 7,
+      "classes": 3,
+      "files": 3
+    },
+    "topaz": {
+      "lines": 241,
+      "functions": 14,
+      "classes": 3,
+      "files": 2
+    },
+    "credentials": {
+      "lines": 241,
+      "functions": 8,
+      "classes": 5,
+      "files": 1
+    },
+    "searxng": {
+      "lines": 240,
+      "functions": 6,
+      "classes": 3,
+      "files": 3
+    },
+    "dataforseo": {
+      "lines": 236,
+      "functions": 6,
+      "classes": 1,
+      "files": 2
+    },
+    "endpoint_factory": {
+      "lines": 234,
+      "functions": 8,
+      "classes": 0,
+      "files": 1
+    },
+    "firecrawl": {
+      "lines": 233,
+      "functions": 5,
+      "classes": 3,
+      "files": 3
+    },
+    "helicone": {
+      "lines": 229,
+      "functions": 4,
+      "classes": 1,
+      "files": 1
+    },
+    "pass_through": {
+      "lines": 229,
+      "functions": 4,
+      "classes": 1,
+      "files": 3
+    },
+    "search_api_router": {
+      "lines": 228,
+      "functions": 4,
+      "classes": 1,
+      "files": 1
+    },
+    "types_utils": {
+      "lines": 226,
+      "functions": 4,
+      "classes": 0,
+      "files": 1
+    },
+    "cloudflare": {
+      "lines": 225,
+      "functions": 12,
+      "classes": 3,
+      "files": 2
+    },
+    "parallel_ai": {
+      "lines": 223,
+      "functions": 6,
+      "classes": 4,
+      "files": 2
+    },
+    "compliance_checks": {
+      "lines": 222,
+      "functions": 12,
+      "classes": 1,
+      "files": 1
+    },
+    "weights_biases": {
+      "lines": 220,
+      "functions": 10,
+      "classes": 3,
+      "files": 1
+    },
+    "health_check_helpers": {
+      "lines": 220,
+      "functions": 5,
+      "classes": 1,
+      "files": 1
+    },
+    "linkup": {
+      "lines": 218,
+      "functions": 5,
+      "classes": 3,
+      "files": 3
+    },
+    "gcs_pubsub": {
+      "lines": 215,
+      "functions": 5,
+      "classes": 1,
+      "files": 1
+    },
+    "containers": {
+      "lines": 207,
+      "functions": 24,
+      "classes": 10,
+      "files": 1
+    },
+    "humanloop": {
+      "lines": 205,
+      "functions": 8,
+      "classes": 3,
+      "files": 1
+    },
+    "model_response_utils": {
+      "lines": 205,
+      "functions": 4,
+      "classes": 0,
+      "files": 1
+    },
+    "lago": {
+      "lines": 203,
+      "functions": 6,
+      "classes": 1,
+      "files": 1
+    },
+    "exa_ai": {
+      "lines": 203,
+      "functions": 5,
+      "classes": 3,
+      "files": 2
+    },
+    "tavily": {
+      "lines": 202,
+      "functions": 5,
+      "classes": 3,
+      "files": 2
+    },
+    "s3": {
+      "lines": 197,
+      "functions": 4,
+      "classes": 1,
+      "files": 1
+    },
+    "completion": {
+      "lines": 194,
+      "functions": 0,
+      "classes": 12,
+      "files": 1
+    },
+    "cooldown_cache": {
+      "lines": 194,
+      "functions": 7,
+      "classes": 2,
+      "files": 1
+    },
+    "s3_cache": {
+      "lines": 194,
+      "functions": 9,
+      "classes": 1,
+      "files": 1
+    },
+    "custom_logger_registry": {
+      "lines": 185,
+      "functions": 3,
+      "classes": 1,
+      "files": 1
+    },
+    "lemonade": {
+      "lines": 184,
+      "functions": 7,
+      "classes": 1,
+      "files": 2
+    },
+    "secret_manager_handler": {
+      "lines": 183,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "base_secret_manager": {
+      "lines": 181,
+      "functions": 5,
+      "classes": 1,
+      "files": 1
+    },
+    "model_param_helper": {
+      "lines": 181,
+      "functions": 11,
+      "classes": 1,
+      "files": 1
+    },
+    "serper": {
+      "lines": 181,
+      "functions": 5,
+      "classes": 3,
+      "files": 2
+    },
+    "logfire_logger": {
+      "lines": 180,
+      "functions": 4,
+      "classes": 3,
+      "files": 1
+    },
+    "lunary": {
+      "lines": 180,
+      "functions": 7,
+      "classes": 1,
+      "files": 1
+    },
+    "braintrust_mock_client": {
+      "lines": 167,
+      "functions": 3,
+      "classes": 0,
+      "files": 1
+    },
+    "get_litellm_params": {
+      "lines": 165,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "get_blog_posts": {
+      "lines": 165,
+      "functions": 6,
+      "classes": 3,
+      "files": 1
+    },
+    "sensitive_data_masker": {
+      "lines": 163,
+      "functions": 5,
+      "classes": 1,
+      "files": 1
+    },
+    "cost_calculator": {
+      "lines": 162,
+      "functions": 3,
+      "classes": 1,
+      "files": 2
+    },
+    "tools": {
+      "lines": 160,
+      "functions": 8,
+      "classes": 0,
+      "files": 1
+    },
+    "middleware": {
+      "lines": 159,
+      "functions": 7,
+      "classes": 2,
+      "files": 2
+    },
+    "galileo": {
+      "lines": 158,
+      "functions": 6,
+      "classes": 2,
+      "files": 1
+    },
+    "gradient_ai": {
+      "lines": 155,
+      "functions": 7,
+      "classes": 1,
+      "files": 1
+    },
+    "traceloop": {
+      "lines": 153,
+      "functions": 2,
+      "classes": 1,
+      "files": 1
+    },
+    "text_splitters": {
+      "lines": 152,
+      "functions": 5,
+      "classes": 1,
+      "files": 2
+    },
+    "deepseek": {
+      "lines": 148,
+      "functions": 8,
+      "classes": 1,
+      "files": 2
+    },
+    "mcp_server": {
+      "lines": 146,
+      "functions": 3,
+      "classes": 7,
+      "files": 2
+    },
+    "openmeter": {
+      "lines": 146,
+      "functions": 6,
+      "classes": 1,
+      "files": 1
+    },
+    "vantage": {
+      "lines": 146,
+      "functions": 3,
+      "classes": 1,
+      "files": 2
+    },
+    "docker_model_runner": {
+      "lines": 146,
+      "functions": 7,
+      "classes": 1,
+      "files": 1
+    },
+    "card_resolver": {
+      "lines": 145,
+      "functions": 3,
+      "classes": 1,
+      "files": 1
+    },
+    "messages": {
+      "lines": 145,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "aws_secret_manager": {
+      "lines": 144,
+      "functions": 7,
+      "classes": 1,
+      "files": 1
+    },
+    "vertex_ai_endpoints": {
+      "lines": 141,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "services": {
+      "lines": 139,
+      "functions": 1,
+      "classes": 5,
+      "files": 1
+    },
+    "prometheus_helpers": {
+      "lines": 138,
+      "functions": 4,
+      "classes": 0,
+      "files": 1
+    },
+    "amazon_nova": {
+      "lines": 138,
+      "functions": 7,
+      "classes": 1,
+      "files": 2
+    },
+    "email_alerting": {
+      "lines": 137,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "clarifai": {
+      "lines": 136,
+      "functions": 8,
+      "classes": 1,
+      "files": 1
+    },
+    "json_validation_rule": {
+      "lines": 134,
+      "functions": 3,
+      "classes": 0,
+      "files": 1
+    },
+    "featherless_ai": {
+      "lines": 134,
+      "functions": 6,
+      "classes": 1,
+      "files": 1
+    },
+    "rerank_endpoints": {
+      "lines": 128,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "responses": {
+      "lines": 127,
+      "functions": 1,
+      "classes": 9,
+      "files": 1
+    },
+    "custom_prompt_management": {
+      "lines": 127,
+      "functions": 8,
+      "classes": 2,
+      "files": 2
+    },
+    "dd_tracing": {
+      "lines": 124,
+      "functions": 11,
+      "classes": 2,
+      "files": 1
+    },
+    "levo": {
+      "lines": 123,
+      "functions": 3,
+      "classes": 2,
+      "files": 2
+    },
+    "get_azure_ad_token_provider": {
+      "lines": 122,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "baseten": {
+      "lines": 122,
+      "functions": 7,
+      "classes": 1,
+      "files": 1
+    },
+    "rag_query": {
+      "lines": 121,
+      "functions": 5,
+      "classes": 1,
+      "files": 1
+    },
+    "supabase": {
+      "lines": 121,
+      "functions": 3,
+      "classes": 1,
+      "files": 1
+    },
+    "agentops": {
+      "lines": 121,
+      "functions": 3,
+      "classes": 2,
+      "files": 2
+    },
+    "realtime": {
+      "lines": 118,
+      "functions": 0,
+      "classes": 8,
+      "files": 1
+    },
+    "google_secret_manager": {
+      "lines": 118,
+      "functions": 2,
+      "classes": 1,
+      "files": 1
+    },
+    "asyncify": {
+      "lines": 117,
+      "functions": 5,
+      "classes": 0,
+      "files": 1
+    },
+    "gcs_cache": {
+      "lines": 114,
+      "functions": 9,
+      "classes": 1,
+      "files": 1
+    },
+    "redis_cluster_cache": {
+      "lines": 110,
+      "functions": 5,
+      "classes": 1,
+      "files": 1
+    },
+    "azure_blob_cache": {
+      "lines": 108,
+      "functions": 8,
+      "classes": 1,
+      "files": 1
+    },
+    "analytics_endpoints": {
+      "lines": 107,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "langtrace": {
+      "lines": 107,
+      "functions": 5,
+      "classes": 1,
+      "files": 1
+    },
+    "compactifai": {
+      "lines": 107,
+      "functions": 3,
+      "classes": 1,
+      "files": 3
+    },
+    "athina": {
+      "lines": 106,
+      "functions": 2,
+      "classes": 1,
+      "files": 1
+    },
+    "cooldown_callbacks": {
+      "lines": 102,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "tool_management": {
+      "lines": 101,
+      "functions": 0,
+      "classes": 10,
+      "files": 1
+    },
+    "lm_studio": {
+      "lines": 101,
+      "functions": 6,
+      "classes": 2,
+      "files": 2
+    },
+    "handle_error": {
+      "lines": 96,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "custom_secret_manager_loader": {
+      "lines": 94,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "pg_vector": {
+      "lines": 94,
+      "functions": 3,
+      "classes": 1,
+      "files": 1
+    },
+    "disk_cache": {
+      "lines": 94,
+      "functions": 13,
+      "classes": 1,
+      "files": 1
+    },
+    "cerebras": {
+      "lines": 93,
+      "functions": 4,
+      "classes": 1,
+      "files": 1
+    },
+    "prompt_layer": {
+      "lines": 92,
+      "functions": 2,
+      "classes": 1,
+      "files": 1
+    },
+    "base": {
+      "lines": 92,
+      "functions": 9,
+      "classes": 1,
+      "files": 1
+    },
+    "router_callbacks": {
+      "lines": 91,
+      "functions": 4,
+      "classes": 0,
+      "files": 1
+    },
+    "dynamodb": {
+      "lines": 90,
+      "functions": 3,
+      "classes": 1,
+      "files": 1
+    },
+    "datarobot": {
+      "lines": 90,
+      "functions": 4,
+      "classes": 1,
+      "files": 1
+    },
+    "vector_store_files": {
+      "lines": 89,
+      "functions": 0,
+      "classes": 13,
+      "files": 1
+    },
+    "litellm_agent": {
+      "lines": 86,
+      "functions": 2,
+      "classes": 1,
+      "files": 2
+    },
+    "llm_request_utils": {
+      "lines": 85,
+      "functions": 3,
+      "classes": 0,
+      "files": 1
+    },
+    "secret_managers": {
+      "lines": 84,
+      "functions": 0,
+      "classes": 3,
+      "files": 2
+    },
+    "aiohttp_openai": {
+      "lines": 83,
+      "functions": 3,
+      "classes": 1,
+      "files": 1
+    },
+    "specialty_caches": {
+      "lines": 82,
+      "functions": 5,
+      "classes": 2,
+      "files": 1
+    },
+    "heroku": {
+      "lines": 82,
+      "functions": 5,
+      "classes": 2,
+      "files": 1
+    },
+    "search": {
+      "lines": 81,
+      "functions": 0,
+      "classes": 5,
+      "files": 1
+    },
+    "fallback_utils": {
+      "lines": 81,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "bedrock_mantle": {
+      "lines": 81,
+      "functions": 5,
+      "classes": 1,
+      "files": 1
+    },
+    "rerank": {
+      "lines": 78,
+      "functions": 3,
+      "classes": 8,
+      "files": 1
+    },
+    "initialize_dynamic_callback_params": {
+      "lines": 76,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "google_genai": {
+      "lines": 74,
+      "functions": 4,
+      "classes": 6,
+      "files": 2
+    },
+    "greenscale": {
+      "lines": 73,
+      "functions": 2,
+      "classes": 1,
+      "files": 1
+    },
+    "get_retry_from_policy": {
+      "lines": 72,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "add_retry_fallback_headers": {
+      "lines": 71,
+      "functions": 3,
+      "classes": 0,
+      "files": 1
+    },
+    "ai21": {
+      "lines": 71,
+      "functions": 3,
+      "classes": 1,
+      "files": 1
+    },
+    "api_route_to_call_types": {
+      "lines": 70,
+      "functions": 3,
+      "classes": 0,
+      "files": 1
+    },
+    "passthrough_endpoints": {
+      "lines": 69,
+      "functions": 0,
+      "classes": 3,
+      "files": 3
+    },
+    "maritalk": {
+      "lines": 66,
+      "functions": 5,
+      "classes": 2,
+      "files": 1
+    },
+    "coroutine_checker": {
+      "lines": 65,
+      "functions": 2,
+      "classes": 1,
+      "files": 1
+    },
+    "base_cache": {
+      "lines": 65,
+      "functions": 10,
+      "classes": 1,
+      "files": 1
+    },
+    "simple_shuffle": {
+      "lines": 65,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "dd_span_tagger": {
+      "lines": 63,
+      "functions": 2,
+      "classes": 1,
+      "files": 1
+    },
+    "zai": {
+      "lines": 61,
+      "functions": 4,
+      "classes": 1,
+      "files": 3
+    },
+    "safe_json_dumps": {
+      "lines": 60,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "cached_imports": {
+      "lines": 60,
+      "functions": 4,
+      "classes": 0,
+      "files": 1
+    },
+    "custom_batch_logger": {
+      "lines": 59,
+      "functions": 4,
+      "classes": 1,
+      "files": 1
+    },
+    "cli_token_utils": {
+      "lines": 59,
+      "functions": 3,
+      "classes": 0,
+      "files": 1
+    },
+    "hyperbolic": {
+      "lines": 57,
+      "functions": 3,
+      "classes": 1,
+      "files": 3
+    },
+    "rules": {
+      "lines": 56,
+      "functions": 4,
+      "classes": 1,
+      "files": 1
+    },
+    "xinference": {
+      "lines": 55,
+      "functions": 3,
+      "classes": 1,
+      "files": 2
+    },
+    "default_encoding": {
+      "lines": 53,
+      "functions": 0,
+      "classes": 0,
+      "files": 1
+    },
+    "nscale": {
+      "lines": 53,
+      "functions": 5,
+      "classes": 1,
+      "files": 1
+    },
+    "llm_caching_handler": {
+      "lines": 51,
+      "functions": 5,
+      "classes": 1,
+      "files": 1
+    },
+    "tag_management": {
+      "lines": 49,
+      "functions": 0,
+      "classes": 6,
+      "files": 1
+    },
+    "custom_sso": {
+      "lines": 49,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "prometheus_cleanup": {
+      "lines": 48,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "discovery_endpoints": {
+      "lines": 48,
+      "functions": 1,
+      "classes": 0,
+      "files": 2
+    },
+    "v0": {
+      "lines": 47,
+      "functions": 3,
+      "classes": 1,
+      "files": 3
+    },
+    "meta_llama": {
+      "lines": 47,
+      "functions": 2,
+      "classes": 1,
+      "files": 1
+    },
+    "rerank_utils": {
+      "lines": 46,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "llamafile": {
+      "lines": 46,
+      "functions": 3,
+      "classes": 1,
+      "files": 1
+    },
+    "google_kms": {
+      "lines": 44,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "morph": {
+      "lines": 43,
+      "functions": 3,
+      "classes": 1,
+      "files": 3
+    },
+    "_logging": {
+      "lines": 41,
+      "functions": 2,
+      "classes": 1,
+      "files": 1
+    },
+    "access_group": {
+      "lines": 40,
+      "functions": 0,
+      "classes": 3,
+      "files": 1
+    },
+    "helicone_mock_client": {
+      "lines": 38,
+      "functions": 0,
+      "classes": 0,
+      "files": 1
+    },
+    "opentelemetry_utils": {
+      "lines": 38,
+      "functions": 4,
+      "classes": 1,
+      "files": 1
+    },
+    "client_initalization_utils": {
+      "lines": 38,
+      "functions": 1,
+      "classes": 1,
+      "files": 1
+    },
+    "clientside_credential_handler": {
+      "lines": 38,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "custom_hooks": {
+      "lines": 37,
+      "functions": 1,
+      "classes": 1,
+      "files": 1
+    },
+    "additional_logging_utils": {
+      "lines": 37,
+      "functions": 3,
+      "classes": 1,
+      "files": 1
+    },
+    "mcp_tools": {
+      "lines": 36,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "posthog_mock_client": {
+      "lines": 36,
+      "functions": 0,
+      "classes": 0,
+      "files": 1
+    },
+    "credential_accessor": {
+      "lines": 36,
+      "functions": 2,
+      "classes": 1,
+      "files": 1
+    },
+    "images": {
+      "lines": 35,
+      "functions": 0,
+      "classes": 2,
+      "files": 1
+    },
+    "langsmith_mock_client": {
+      "lines": 35,
+      "functions": 0,
+      "classes": 0,
+      "files": 1
+    },
+    "app_crypto": {
+      "lines": 34,
+      "functions": 3,
+      "classes": 1,
+      "files": 1
+    },
+    "lambda_ai": {
+      "lines": 34,
+      "functions": 2,
+      "classes": 1,
+      "files": 3
+    },
+    "novita": {
+      "lines": 34,
+      "functions": 1,
+      "classes": 1,
+      "files": 1
+    },
+    "nebius": {
+      "lines": 34,
+      "functions": 1,
+      "classes": 1,
+      "files": 2
+    },
+    "custom_auth_auto": {
+      "lines": 32,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "custom_sso_handler": {
+      "lines": 31,
+      "functions": 1,
+      "classes": 1,
+      "files": 1
+    },
+    "_internal_lru_cache": {
+      "lines": 31,
+      "functions": 4,
+      "classes": 0,
+      "files": 1
+    },
+    "get_provider_specific_headers": {
+      "lines": 30,
+      "functions": 1,
+      "classes": 1,
+      "files": 1
+    },
+    "wandb": {
+      "lines": 30,
+      "functions": 1,
+      "classes": 1,
+      "files": 3
+    },
+    "prisma_migration": {
+      "lines": 29,
+      "functions": 0,
+      "classes": 0,
+      "files": 1
+    },
+    "mock_functions": {
+      "lines": 28,
+      "functions": 2,
+      "classes": 0,
+      "files": 1
+    },
+    "config_management_endpoints": {
+      "lines": 27,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "embedding": {
+      "lines": 22,
+      "functions": 0,
+      "classes": 1,
+      "files": 1
+    },
+    "env_utils": {
+      "lines": 22,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "litellm_core_utils": {
+      "lines": 17,
+      "functions": 0,
+      "classes": 1,
+      "files": 1
+    },
+    "safe_json_loads": {
+      "lines": 16,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "adapter": {
+      "lines": 11,
+      "functions": 0,
+      "classes": 1,
+      "files": 1
+    },
+    "empower": {
+      "lines": 10,
+      "functions": 0,
+      "classes": 1,
+      "files": 1
+    },
+    "galadriel": {
+      "lines": 10,
+      "functions": 0,
+      "classes": 1,
+      "files": 1
+    },
+    "github": {
+      "lines": 10,
+      "functions": 0,
+      "classes": 1,
+      "files": 1
+    },
+    "friendliai": {
+      "lines": 10,
+      "functions": 0,
+      "classes": 1,
+      "files": 1
+    },
+    "post_call_rules": {
+      "lines": 9,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "scheduler": {
+      "lines": 8,
+      "functions": 0,
+      "classes": 1,
+      "files": 1
+    },
+    "fine_tuning": {
+      "lines": 6,
+      "functions": 0,
+      "classes": 1,
+      "files": 1
+    },
+    "custom_validate": {
+      "lines": 6,
+      "functions": 1,
+      "classes": 0,
+      "files": 1
+    },
+    "thread_pool_executor": {
+      "lines": 6,
+      "functions": 0,
+      "classes": 0,
+      "files": 1
+    },
+    "lambda": {
+      "lines": 5,
+      "functions": 0,
+      "classes": 0,
+      "files": 1
+    },
+    "test_httpx": {
+      "lines": 1,
+      "functions": 0,
+      "classes": 0,
+      "files": 1
+    },
+    "response_header_helpers": {
+      "lines": 1,
+      "functions": 0,
+      "classes": 0,
+      "files": 1
+    },
+    "tokenizers": {
+      "lines": 1,
+      "functions": 0,
+      "classes": 0,
+      "files": 1
+    },
+    "response_headers": {
+      "lines": 1,
+      "functions": 0,
+      "classes": 0,
+      "files": 1
+    }
+  }
+}
