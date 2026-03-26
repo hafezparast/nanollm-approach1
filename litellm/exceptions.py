@@ -1,0 +1,33 @@
+"""litellm.exceptions compatibility shim."""
+
+from nanollm.exceptions import (
+    APIConnectionError,
+    APIError,
+    AuthenticationError,
+    BadGatewayError,
+    BadRequestError,
+    BudgetExceededError,
+    ContentPolicyViolationError,
+    ContextWindowExceededError,
+    InternalServerError,
+    InvalidRequestError,
+    JSONSchemaValidationError,
+    NanoLLMException,
+    NotFoundError,
+    OpenAIError,
+    PermissionDeniedError,
+    RateLimitError,
+    ServiceUnavailableError,
+    Timeout,
+    UnsupportedParamsError,
+)
+
+__all__ = [
+    "APIConnectionError", "APIError", "AuthenticationError",
+    "BadGatewayError", "BadRequestError", "BudgetExceededError",
+    "ContentPolicyViolationError", "ContextWindowExceededError",
+    "InternalServerError", "InvalidRequestError", "JSONSchemaValidationError",
+    "NanoLLMException", "NotFoundError", "OpenAIError",
+    "PermissionDeniedError", "RateLimitError", "ServiceUnavailableError",
+    "Timeout", "UnsupportedParamsError",
+]

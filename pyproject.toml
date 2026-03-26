@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nanollm"
+version = "0.2.0"
+description = "Minimal, zero-bloat LLM API wrapper — drop-in litellm replacement"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "httpx[http2]>=0.27",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio", "respx"]
+
+[tool.setuptools]
+packages = ["nanollm", "nanollm.adapters", "litellm"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
